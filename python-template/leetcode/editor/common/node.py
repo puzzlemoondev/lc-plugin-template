@@ -1,4 +1,4 @@
-from typing import List
+from typing import Union
 
 
 class ListNode:
@@ -7,7 +7,7 @@ class ListNode:
         self.next = next_node
 
     @staticmethod
-    def create_head(nums: List[int]):
+    def create_head(nums: list[int]):
         if len(nums) == 0 or nums is None:
             return None
         head = ListNode(nums[0])
@@ -18,15 +18,13 @@ class ListNode:
         return head
 
     @staticmethod
-    def print(head: 'ListNode'):
+    def print(head: "ListNode"):
         p = head
         while p:
-            arrow = ' -> ' if p.next else ''
+            arrow = " -> " if p.next else ""
             print(p.val, end=arrow)
             p = p.next
         print()
-
-from typing import List, Union
 
 
 class TreeNode:
@@ -36,7 +34,7 @@ class TreeNode:
         self.right = None
 
     @staticmethod
-    def create_root(nums: List[Union[int, None]]):
+    def create_root(nums: list[Union[int, None]]):
         if len(nums) == 0 or nums is None:
             return None
         root = TreeNode(nums[0])
