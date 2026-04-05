@@ -1,12 +1,13 @@
 from collections import Counter
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
         needs = Counter(s1)
         window = Counter()
 
-        left = right = 0 # [left,right)
+        left = right = 0  # [left,right)
         valid_chars = 0
 
         while right < len(s2):
@@ -35,11 +36,11 @@ class Solution:
                     window[d] -= 1
 
         return False
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

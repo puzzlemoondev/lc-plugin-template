@@ -10,6 +10,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         nodes = []
@@ -24,10 +25,11 @@ class Solution:
 
         traverse(root)
         return nodes
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

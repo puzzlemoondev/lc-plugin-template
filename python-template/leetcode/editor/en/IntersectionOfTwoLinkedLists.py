@@ -8,8 +8,11 @@ from leetcode.editor.common.node import *
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+    def getIntersectionNode(
+        self, headA: ListNode, headB: ListNode
+    ) -> Optional[ListNode]:
         # find lengths of each list
         len_a = self._find_list_length(headA)
         len_b = self._find_list_length(headB)
@@ -29,8 +32,6 @@ class Solution:
 
         return None
 
-
-
     @staticmethod
     def _find_list_length(head: ListNode) -> int:
         length = 0
@@ -49,11 +50,10 @@ class Solution:
             end = end.next
         return end
 
-        
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

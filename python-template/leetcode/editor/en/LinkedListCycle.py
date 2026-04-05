@@ -8,6 +8,7 @@ from leetcode.editor.common.node import *
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         p1 = head
@@ -18,11 +19,11 @@ class Solution:
             if p2 is p1:
                 return True
         return False
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

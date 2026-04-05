@@ -1,10 +1,11 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        left, right = 1, pow(10, 9) # question constraint
+        left, right = 1, pow(10, 9)  # question constraint
         while left <= right:
             mid = left + (right - left) // 2
             # find left bound
@@ -29,10 +30,11 @@ class Solution:
             if remaining:
                 hrs += 1
         return hrs
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

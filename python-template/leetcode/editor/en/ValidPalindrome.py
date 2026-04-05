@@ -17,11 +17,12 @@ class Solution:
 
     @staticmethod
     def _sanitize(s: str) -> str:
-        return ''.join(char.lower() for char in s if char.isalnum())
+        return "".join(char.lower() for char in s if char.isalnum())
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

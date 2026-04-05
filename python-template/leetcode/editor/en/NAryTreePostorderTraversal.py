@@ -7,8 +7,9 @@ class Node:
         self.children = children
 """
 
+
 class Solution:
-    def postorder(self, root: 'Node') -> List[int]:
+    def postorder(self, root: "Node") -> List[int]:
         nodes = []
 
         def traverse(node):
@@ -20,14 +21,14 @@ class Solution:
                     traverse(child)
 
             nodes.append(node.val)
-            
+
         traverse(root)
         return nodes
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

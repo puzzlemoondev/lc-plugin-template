@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 # Definition for singly-linked list.
 # class ListNode:
@@ -20,7 +21,9 @@ class Solution:
         current_dup = dummy_dup
         current = head
         while current:
-            if current.val == current_dup.val or (current.next and current.val == current.next.val):
+            if current.val == current_dup.val or (
+                current.next and current.val == current.next.val
+            ):
                 current_dup.next = current
                 current_dup = current_dup.next
             else:
@@ -33,11 +36,9 @@ class Solution:
         return dummy_uniq.next
 
 
-
-        
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here

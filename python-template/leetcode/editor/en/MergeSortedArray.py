@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
@@ -27,11 +28,10 @@ class Solution:
             p2 -= 1
             p -= 1
 
-        
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

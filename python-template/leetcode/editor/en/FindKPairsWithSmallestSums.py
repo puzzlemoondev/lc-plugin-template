@@ -1,9 +1,13 @@
 from typing import *
 from leetcode.editor.common.node import *
 import heapq
+
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
-    def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
+    def kSmallestPairs(
+        self, nums1: List[int], nums2: List[int], k: int
+    ) -> List[List[int]]:
         pq = []
         for i, n in enumerate(nums1):
             heapq.heappush(pq, (n + nums2[0], i, 0))
@@ -21,13 +25,9 @@ class Solution:
         return pairs
 
 
-
-
-        
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

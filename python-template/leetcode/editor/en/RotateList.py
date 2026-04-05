@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 # Definition for singly-linked list.
 # class ListNode:
@@ -64,11 +65,9 @@ class Solution:
         return pre
 
 
-        
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

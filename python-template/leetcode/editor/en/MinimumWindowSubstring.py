@@ -2,6 +2,7 @@ from typing import *
 from collections import Counter
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
@@ -10,10 +11,10 @@ class Solution:
         # current window counter state
         window = Counter()
 
-        left = right = 0 # [left, right)
-        valid_chars = 0 # number of chars with count satisfying need
-        start = 0 # start index of res
-        length: int | None = None # length of res
+        left = right = 0  # [left, right)
+        valid_chars = 0  # number of chars with count satisfying need
+        start = 0  # start index of res
+        length: int | None = None  # length of res
 
         while right < len(s):
             # char to put into window
@@ -45,12 +46,12 @@ class Solution:
                         valid_chars -= 1
                     window[d] -= 1
 
-        return s[start:start+length] if length else ""
-        
+        return s[start : start + length] if length else ""
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

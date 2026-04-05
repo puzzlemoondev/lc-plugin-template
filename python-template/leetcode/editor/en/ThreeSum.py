@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
@@ -10,7 +11,7 @@ class Solution:
         i = 0
         while i < len(nums):
             # threeSum == twoSum + nums[i] == 0
-            two_sums = self.twoSum(nums, i + 1,  0 - nums[i])
+            two_sums = self.twoSum(nums, i + 1, 0 - nums[i])
             for two_sum in two_sums:
                 two_sum.append(nums[i])
                 ans.append(two_sum)
@@ -50,11 +51,11 @@ class Solution:
             current_index += step
         return (current_index - index) * step
 
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    print(solution.threeSum([0,0,0]))
-    
+    print(solution.threeSum([0, 0, 0]))

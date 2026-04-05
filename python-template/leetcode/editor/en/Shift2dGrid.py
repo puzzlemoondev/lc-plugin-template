@@ -1,5 +1,6 @@
 from typing import List
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def shiftGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
@@ -39,11 +40,10 @@ class Solution:
         n = len(grid[0])
         return divmod(index, n)
 
-        
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

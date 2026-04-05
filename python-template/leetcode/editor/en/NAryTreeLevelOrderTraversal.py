@@ -6,10 +6,12 @@ class Node:
         self.val = val
         self.children = children
 """
+
 from collections import deque
 
+
 class Solution:
-    def levelOrder(self, root: 'Node') -> List[List[int]]:
+    def levelOrder(self, root: "Node") -> List[List[int]]:
         if root is None:
             return []
 
@@ -26,11 +28,11 @@ class Solution:
                         q.append(child)
             nodes.append(level)
         return nodes
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

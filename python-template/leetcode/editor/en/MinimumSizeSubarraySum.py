@@ -1,5 +1,6 @@
 from typing import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
@@ -16,10 +17,11 @@ class Solution:
                 window_sum -= nums[left]
                 left += 1
         return min_len or 0
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

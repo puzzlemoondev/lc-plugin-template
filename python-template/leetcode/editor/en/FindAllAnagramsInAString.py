@@ -1,6 +1,7 @@
 from typing import List
 from collections import Counter
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
@@ -9,7 +10,7 @@ class Solution:
         needs = Counter(p)
         window = Counter()
 
-        left = right = 0 # [left,right)
+        left = right = 0  # [left,right)
         valid_chars = 0
 
         while right < len(s):
@@ -35,11 +36,11 @@ class Solution:
                     window[d] -= 1
 
         return res
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

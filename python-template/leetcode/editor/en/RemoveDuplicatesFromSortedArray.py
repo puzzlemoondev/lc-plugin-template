@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
@@ -23,11 +24,11 @@ class Solution:
             fast += 1
         # slow is an index, so the number of unique elements is slow + 1.
         return slow + 1
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

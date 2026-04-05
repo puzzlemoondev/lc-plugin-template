@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 # Definition for singly-linked list.
 # class ListNode:
@@ -15,7 +16,7 @@ class Solution:
         p1 = p2 = head
         for _ in range(k):
             if p2 is None:
-                return head # no enough node, skip reverse
+                return head  # no enough node, skip reverse
             p2 = p2.next
         new_head = self._reverseN(p1, k)
         # connect reversed
@@ -39,10 +40,11 @@ class Solution:
         head.next = cur
         # pre is at node n (new head)
         return pre
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

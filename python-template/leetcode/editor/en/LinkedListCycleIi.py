@@ -8,6 +8,7 @@ from leetcode.editor.common.node import *
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
         fast = head
@@ -29,11 +30,10 @@ class Solution:
 
         return slow
 
-        
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

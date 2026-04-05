@@ -3,6 +3,7 @@ from leetcode.editor.common.node import *
 
 from collections import deque
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 # Definition for a binary tree node.
 # class TreeNode:
@@ -31,11 +32,11 @@ class Solution:
             depth += 1
 
         return depth
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

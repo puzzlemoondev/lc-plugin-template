@@ -1,5 +1,6 @@
 from typing import List
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
@@ -58,11 +59,12 @@ class Solution:
                 break
             current_index += step
         return (current_index - index) * step
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    print(solution.fourSum([1,0,-1,0,-2,2], 0))
-    
+    print(solution.fourSum([1, 0, -1, 0, -2, 2], 0))

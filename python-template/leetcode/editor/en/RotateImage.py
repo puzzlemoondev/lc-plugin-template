@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
@@ -16,7 +17,9 @@ class Solution:
     def _transpose(matrix: List[List[int]]) -> None:
         shape = len(matrix)
         for x in range(shape):
-            for y in range(x, shape): # y > x (lower triangle only to avoid swapping twice)
+            for y in range(
+                x, shape
+            ):  # y > x (lower triangle only to avoid swapping twice)
                 matrix[x][y], matrix[y][x] = matrix[y][x], matrix[x][y]
 
     @staticmethod
@@ -28,11 +31,11 @@ class Solution:
                 row[left], row[right] = row[right], row[left]
                 left += 1
                 right -= 1
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

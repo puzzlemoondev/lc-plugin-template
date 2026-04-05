@@ -2,6 +2,7 @@ from typing import *
 from leetcode.editor.common.node import *
 from collections import Counter
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def longestSubstring(self, s: str, k: int) -> int:
@@ -34,10 +35,11 @@ class Solution:
             if valid_chars == n:
                 length = max(length, right - left)
         return length
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

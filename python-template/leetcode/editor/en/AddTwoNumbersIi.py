@@ -2,6 +2,7 @@ from typing import *
 from leetcode.editor.common.node import *
 from collections import deque
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 # Definition for singly-linked list.
 # class ListNode:
@@ -9,7 +10,9 @@ from collections import deque
 #         self.val = val
 #         self.next = next
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         s1 = self._linked_list_to_stack(l1)
         s2 = self._linked_list_to_stack(l2)
 
@@ -51,13 +54,9 @@ class Solution:
         return dummy.next
 
 
-
-
-        
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

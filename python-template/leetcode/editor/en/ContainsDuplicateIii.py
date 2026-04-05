@@ -1,9 +1,12 @@
 from typing import List
 from sortedcontainers import SortedList
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
-    def containsNearbyAlmostDuplicate(self, nums: List[int], indexDiff: int, valueDiff: int) -> bool:
+    def containsNearbyAlmostDuplicate(
+        self, nums: List[int], indexDiff: int, valueDiff: int
+    ) -> bool:
         left = right = 0
         window = SortedList()
         while right < len(nums):
@@ -26,11 +29,11 @@ class Solution:
                 window.remove(nums[left])
                 left += 1
         return False
-        
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

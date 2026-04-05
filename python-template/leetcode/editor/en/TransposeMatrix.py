@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
@@ -16,12 +17,12 @@ class Solution:
 
     @staticmethod
     def _zeros(m: int, n: int) -> List[List[int]]:
-        return [[0]*n for _ in range(m)]
-        
+        return [[0] * n for _ in range(m)]
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
@@ -41,11 +42,10 @@ class Solution:
     def _swap(arr: List[int], from_index: int, to_index: int) -> None:
         arr[to_index], arr[from_index] = arr[from_index], arr[to_index]
 
-        
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

@@ -3,6 +3,7 @@ from leetcode.editor.common.node import *
 
 import heapq
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
@@ -25,12 +26,12 @@ class Solution:
                 heapq.heappush(pq, (nxt, idx_arr, idx_nxt))
             n += 1
 
-        raise RuntimeError('no solution')
+        raise RuntimeError("no solution")
+
 
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

@@ -1,6 +1,7 @@
 from typing import *
 from leetcode.editor.common.node import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
@@ -35,10 +36,11 @@ class Solution:
     @staticmethod
     def _shape(matrix: List[List[int]]) -> Tuple[int, int]:
         return len(matrix[0]), len(matrix)
+
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    

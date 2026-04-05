@@ -1,5 +1,6 @@
 from typing import *
 
+
 # leetcode submit region begin(Prohibit modification and deletion)
 class Solution:
     def splitArray(self, nums: List[int], k: int) -> int:
@@ -10,9 +11,11 @@ class Solution:
         while left <= right:
             mid = left + (right - left) // 2
             days_needed_at_capacity = self.f(weights, mid)
-            if days_needed_at_capacity <= days: # capacity overshot, decrease right bound
+            if (
+                days_needed_at_capacity <= days
+            ):  # capacity overshot, decrease right bound
                 right = mid - 1
-            else: # insufficient capacity, increase left bound
+            else:  # insufficient capacity, increase left bound
                 left = mid + 1
         return left
 
@@ -45,10 +48,10 @@ class Solution:
             days += 1
         return days
 
+
 # leetcode submit region end(Prohibit modification and deletion)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     solution = Solution()
     # your test code here
-    
